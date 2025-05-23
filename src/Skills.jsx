@@ -3,31 +3,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Skills.css";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
-import { SiMui, SiNextdotjs } from "react-icons/si";
+import { SiMui } from "react-icons/si";
 
 const SkillsSection = () => {
   const [visible, setVisible] = useState(false);
   const sectionRef = useRef(null);
 
-  useEffect(() => {
-    AOS.init({ duration: 1000, once: true });
+ useEffect(() => {
+  const section = sectionRef.current;
+  section?.addEventListener('scroll', handleScroll);
 
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-
-    return () => {
-      if (sectionRef.current) observer.unobserve(sectionRef.current);
-    };
-  }, []);
+  return () => {
+    section?.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
   const skills = [
     { name: "HTML", level: 95, icon: <FaHtml5 color="#e34c26" /> },
