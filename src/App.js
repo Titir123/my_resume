@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import AboutSection from "./About";
@@ -15,6 +14,7 @@ import {
   TimelineDot, TimelineConnector, TimelineContent
 } from '@mui/lab';
 import Contacts from "./Contacts";
+import { useLocation } from "react-router-dom";
 
 // TimelineSection Component
 const TimelineSection = ({ title, items }) => (
@@ -49,7 +49,7 @@ const ScrollToSection = ({ sectionRefs }) => {
     if (ref?.current) {
       ref.current.scrollIntoView({ behavior: "smooth" });
     }
-  }, [location.pathname]);
+  }, [location.pathname, sectionRefs]);
 
   return null;
 };
