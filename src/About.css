@@ -1,0 +1,42 @@
+/* About Section Styling */
+.about-section {
+  padding: 50px 20px;
+  background-color: #000e1ce9;/* Black background for the section */
+  color: #fff; /* White text color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #1d0101; /* White background for content box */
+  color: #333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  border: 2px solid #00aaff; /* Accent border */
+  text-align: left;
+}
+
+.about-content h2,
+.about-content h3 {
+  margin-bottom: 20px;
+  color: #00aaff; /* Accent color */
+}
+
+.about-content p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color:#fff
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color:#fff
+}
+

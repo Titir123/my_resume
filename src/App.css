@@ -1,0 +1,115 @@
+/* Navbar styles */
+.navbar {
+  background-color: #000; /* Black navbar background */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center; /* Center the contents horizontally */
+  align-items: center; /* Center the contents vertically */
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem; /* Space between links */
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center; /* Center text for smaller screens */
+  transition: transform 0.3s ease, letter-spacing 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f39c12; /* Hover color */
+  transform: scale(1.1); /* Slightly increase size */
+  letter-spacing: 2px; /* Add spacing between letters */
+}
+
+/* Hamburger menu for smaller screens */
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.hamburger .bar.open {
+  transform: rotate(45deg);
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide nav links by default */
+    flex-direction: column; /* Stack links vertically */
+    gap: 1rem; /* Space between links */
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0; /* Make the menu span the full width */
+    background-color: #000;
+    width: 100%;
+    padding: 1rem;
+    border-top: 1px solid #333;
+    justify-content: center; /* Center links vertically */
+    align-items: center; /* Center links horizontally */
+    text-align: center; /* Center text inside links */
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger on smaller screens */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show nav links when hamburger is clicked */
+  }
+}
+
+
+
+/* Hero section background black */
+.hero-section {
+  background: #000 !important; /* Force black background */
+  color: #fff; /* Ensure text is white for readability */
+  height: 100vh; /* Full height for hero section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Falling dots container styles */
+.falling-dots-container {
+  position: relative;
+  display: none; /* Hide the falling dots if not needed */
+}
+
+.falling-dot {
+  display: none; /* Hide dots to avoid adding unnecessary elements */
+}
+
+/* Social icons */
+.social-icons a {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
