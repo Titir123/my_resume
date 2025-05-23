@@ -59,16 +59,15 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <a href="/Suchishree-Sengupta.pdf" target="_blank" rel="noopener noreferrer">
+  <a href="/Suchishree-Sengupta_CV.pdf" download>
   <Button
-              variant="contained"
-              color="error"
-              sx={{ mt: 6, backgroundColor: "#f50057" }}
-            >
-              Download CV
-            </Button>
+    variant="contained"
+    color="error"
+    sx={{ mt: 6, backgroundColor: "#f50057" }}
+  >
+    Download CV
+  </Button>
 </a>
-      
     </section>
   );
 };
