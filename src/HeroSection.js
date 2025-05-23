@@ -59,7 +59,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-      <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      <a href="/Suchishree-Sengupta.pdf" target="_blank" rel="noopener noreferrer">
   <Button
               variant="contained"
               color="error"
