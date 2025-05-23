@@ -10,13 +10,27 @@ const SkillsSection = () => {
   const sectionRef = useRef(null);
 
  useEffect(() => {
+  AOS.init({ duration: 1000, once: true });
+
   const section = sectionRef.current;
-  section?.addEventListener('scroll', handleScroll);
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        setVisible(true);
+        observer.disconnect(); // Optional: could also use observer.unobserve(section);
+      }
+    },
+    { threshold: 0.3 }
+  );
+
+  if (section) observer.observe(section);
 
   return () => {
-    section?.removeEventListener('scroll', handleScroll);
+    if (section) observer.unobserve(section);
   };
 }, []);
+
 
   const skills = [
     { name: "HTML", level: 95, icon: <FaHtml5 color="#e34c26" /> },
