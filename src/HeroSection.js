@@ -59,7 +59,7 @@ const HeroSection = () => {
           </a>
         </div>
       </div>
-  <a href="/Suchishree-Sengupta_CV.pdf" download>
+  <a href="/Suchishree_resume.pdf" download>
   <Button
     variant="contained"
     color="error"

@@ -3,6 +3,12 @@ import React from "react";
 
 const otherProjects = [
   {
+      name: 'Itemize – Web Application showing CRUD operations',
+      description:
+        'React-based product-based web app featuring user authentication, CRUD operations, responsive UI, lazy loading for better performance, authentication with JWT tokens for secure login',
+      url: 'https://itemizeapp.netlify.app/',
+    },
+  {
     name: "STonePaperScissor",
     url: "https://github.com/Titir123/STonePaperScissor",
     description: "Rock-Paper-Scissors game built with React.",
