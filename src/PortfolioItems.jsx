@@ -1,18 +1,10 @@
 import React from 'react';
 import './Portfolio.css'; // Create a CSS file for styles
-import project1Image from './Images/photo-1453928582365-b6ad33cbcf64.avif';
 import project2Image from './Images/photo-1501959181532-7d2a3c064642.avif';
 import project3Image from './Images/photo-1497215842964-222b430dc094.avif';
 
 const Portfolio = () => {
   const projects = [
-    // {
-    //   title: 'Itemize – Web Application showing CRUD operations',
-    //   description:
-    //     'React-based product-based web app featuring user authentication, CRUD operations, responsive UI, lazy loading for better performance, authentication with JWT tokens for secure login',
-    //   image: project1Image,
-    //   link: 'https://itemizeapp.netlify.app/',
-    // },
     {
       title: 'E-Commerce Website',
       description:
