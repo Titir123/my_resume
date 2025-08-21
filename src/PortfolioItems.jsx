@@ -11,7 +11,7 @@ const Portfolio = () => {
         'An e-commerce website showcasing products, implementing a shopping cart using Redux toolkit and persisted store, and a payment gateway integration. Integrated AI chatbot that handled product queries with more ease and reducing support tickets.',
       image: project2Image,
       link: 'https://shopppingmania.netlify.app/',
-      chat:"https://youtu.be/cBHRIZ_n2V4"
+      chat:"https://youtu.be/8sUzzwCj-jM"
     },
     {
       title: 'Medinest – Healthcare Appointment Booking Platform',
@@ -19,7 +19,7 @@ const Portfolio = () => {
         ' A Next.js-powered platform enabling users to book doctor appointments, with full authentication and role-based access management.Developed secure user authentication and middleware protection. Implemented Redux for state management and data persistence. Optimized performance with server-side rendering (SSR) and static site generation (SSG). Implemented RAG application through n8n workflows for seamless user queries regarding appointments. '
       , image: project3Image,
       link: 'https://doctorapi.netlify.app/',
-      chat:"https://youtu.be/WsYAR17B0VE"
+      chat:"https://youtu.be/D1KoxBL0w6k"
     },
   ];
 
