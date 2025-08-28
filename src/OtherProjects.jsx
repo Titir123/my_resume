@@ -14,11 +14,6 @@ const otherProjects = [
     description: "Rock-Paper-Scissors game built with React.",
   },
   {
-    name: "Crypto",
-    url: "https://github.com/Titir123/Crypto",
-    description: "Real-time crypto tracker using Next.js.",
-  },
-  {
     name: "Todos",
     url: "https://github.com/Titir123/Todos",
     description: "Minimal task manager with CRUD in Next.js using AG Grid",
