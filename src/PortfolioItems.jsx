@@ -11,7 +11,7 @@ const Portfolio = () => {
         'An e-commerce website showcasing products, implementing a shopping cart using Redux toolkit and persisted store, and a payment gateway integration. Integrated AI chatbot that handled product queries with more ease and reducing support tickets.',
       image: project2Image,
       link: 'https://shopppingmania.netlify.app/',
-      chat:"https://youtu.be/8sUzzwCj-jM"
+      chat:"https://youtu.be/Cg0VLUUFssA"
     },
     {
       title: 'Medinest – Healthcare Appointment Booking Platform',
