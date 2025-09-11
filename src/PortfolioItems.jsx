@@ -33,24 +33,15 @@ const Portfolio = () => {
             <div className="portfolio-overlay">
               <h4 className="project-title">{project.title}</h4>
               <p className="project-description">{project.description}</p>
-              <div style={{display:'flex', flexDirection:"row", justifyContent:"space-between", width:"50%"}}>
-                <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                View Project
-              </a>
-               <a
-                href={project.chat}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                View Chat Video
-              </a>
-              </div>
+          <div className="project-buttons">
+  <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+    View Project
+  </a>
+  <a href={project.chat} target="_blank" rel="noopener noreferrer" className="project-link">
+    View Chat Video
+  </a>
+</div>
+
             </div>
           </div>
         ))}

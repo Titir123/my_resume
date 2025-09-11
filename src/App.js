@@ -6,6 +6,9 @@ import SkillsSection from "./Skills";
 import Portfolio from "./PortfolioItems";
 import OtherProjects from "./OtherProjects";
 import "./App.css";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 import {
   Container, Typography, Grid, Divider, Box
 } from "@mui/material";
